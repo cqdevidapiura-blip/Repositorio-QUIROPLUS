@@ -58,7 +58,8 @@ const WhatsAppBot = ({ setActiveModal }) => {
   useEffect(() => {
     const fetchSedes = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/sedes'); 
+        const baseUrl = import.meta.env.VITE_API_URL || 'https://repositorio-quiroplus-production.up.railway.app';
+        const response = await fetch(`${baseUrl}/api/sedes`);
         if (response.ok) {
           const data = await response.json();
           setSedes(data);

@@ -14,7 +14,8 @@ const Nosotros = () => {
   useEffect(() => {
     const fetchConfiguracion = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/nosotros/configuracion');
+          const baseUrl = import.meta.env.VITE_API_URL || 'https://repositorio-quiroplus-production.up.railway.app';
+          const response = await fetch(`${baseUrl}/api/nosotros/configuracion`);
         if (response.ok) {
           const data = await response.json();
           setVideoUrl(data.video_url);

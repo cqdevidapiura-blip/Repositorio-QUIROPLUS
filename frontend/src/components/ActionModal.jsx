@@ -27,7 +27,8 @@ const ActionModal = ({ activeModal, closeModal }) => {
 
   useEffect(() => {
     if (activeModal === 'agendar') {
-      fetch('http://localhost:3000/api/sedes')
+      const baseUrl = import.meta.env.VITE_API_URL || 'https://repositorio-quiroplus-production.up.railway.app';
+      fetch(`${baseUrl}/api/sedes`)
         .then(res => res.json())
         .then(data => setSedesList(data))
         .catch(err => console.error("Error cargando sedes:", err));
@@ -62,7 +63,8 @@ const ActionModal = ({ activeModal, closeModal }) => {
 
     try {
       setIsSubmitting(true);
-      const response = await fetch('http://localhost:3000/api/citas', {
+      const baseUrl = import.meta.env.VITE_API_URL || 'https://repositorio-quiroplus-production.up.railway.app';
+      const response = await fetch(`${baseUrl}/api/citas`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

@@ -42,7 +42,8 @@ const StaffDetail = () => {
   useEffect(() => {
     const fetchProfesional = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/api/staff/${id}`);
+        const baseUrl = import.meta.env.VITE_API_URL || 'https://repositorio-quiroplus-production.up.railway.app';
+        const response = await fetch(`${baseUrl}/api/staff/${id}`);
         const data = await response.json();
         if (!response.ok) throw new Error(data.message || 'Error al obtener los datos');
         setProfesional(Array.isArray(data) ? data[0] : data);
