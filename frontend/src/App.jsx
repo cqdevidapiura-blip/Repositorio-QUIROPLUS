@@ -11,6 +11,7 @@ import BolsaTrabajo from './pages/BolsaTrabajo';
 import Productos from './pages/Productos';
 import Convenios from './pages/Convenios';
 import StaffDetail from './pages/StaffDetail';
+import Admin from './pages/Admin';
 
 // Lleva el scroll arriba al cambiar de pestaña
 const ScrollToTop = () => {
@@ -53,7 +54,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/quiropracticas" element={<Quiropracticas />} />
-          
           <Route path="/terapia-fisica" element={<TerapiaFisica />} />
           <Route path="/staff" element={<Staff />} />
           <Route path="/staff/:id" element={<StaffDetail />} />
@@ -62,6 +62,7 @@ function App() {
           <Route path="/trabaja-con-nosotros" element={<BolsaTrabajo />} />
           <Route path="/productos" element={<Productos />} />
           <Route path="/convenios" element={<Convenios />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </PageWrapper>
     </Router>
