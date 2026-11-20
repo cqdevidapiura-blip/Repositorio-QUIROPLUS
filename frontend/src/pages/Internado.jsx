@@ -7,8 +7,8 @@ import ActionModal from '../components/ActionModal';
 const TESTIMONIOS_INTERNADO = [
   {
     id: 1,
-    nombre: 'internado 1',
-    rol: 'Ex-Interno del programa',
+    nombre: 'Noriela',
+    rol: 'Ex-Interna del programa',
     cita: 'Desde el primer día me hicieron sentir parte del equipo. No solo aprendí técnicas clínicas avanzadas y herramientas fundamentales para mi carrera, sino también el inmenso valor del trato humano y cercano con cada paciente. La experiencia clínica real me dio una visión integral de la profesión, brindándome la confianza necesaria para dar mis primeros pasos profesionales.',
     imagen: '/images/menu/silueta-directiva-hombre.png' 
   },
