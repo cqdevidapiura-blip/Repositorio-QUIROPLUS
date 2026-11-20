@@ -67,9 +67,7 @@ const LOCATIONS_DATA = [
     reviews: [
       { id: 1, name: "Alvaro Aguilar Alfaro", info: "1 opinión", date: "Hace un mes", stars: 5, text: "Excelente servicio profesional y buena atención desde hace varios años", avatarBg: "bg-[#455a64]", initial: "A" },
       { id: 2, name: "Angel Apaza", info: "10 opiniones · 5 fotos", date: "2 semanas atrás", stars: 5, text: "Es un a buena opción para problema s relacionados a lesiones en la columna, ya que trata no lo síntomas sino la raíz de ellos.", avatarBg: "bg-[#0288d1]", initial: "A" },
-      { id: 3, name: "Jorge Manzur", info: "Local Guide · 113 opiniones", date: "Hace 7 años", stars: 1, text: "Consulta y ajuste caros. Costos más elevados que ir a un cardiologo.", avatarBg: "bg-[#c2185b]", initial: "J", 
-        ownerResponse: { date: "Hace 7 años", text: "Estimado Jorge. Tenemos el compromiso de llegar quiropráctica a, mas personas. Sugiero pida la promoción del mes a nuestra asistentes. Que tenga un día super saludable." } 
-      }
+      { id: 3, name: "Antonia Mendoza", info: "Local Guide · 113 opiniones", date: "Hace 2 meses", stars: 5, text: "Muy amable la atención y me ayudo mucho en una etapa que estaba saturada laboralmente con mucho estrés, sentí un cambio notorio y mejoria en mi columna y sistema nervioso", avatarBg: "bg-[#c2185b]", initial: "A" }
     ]
   },
   {
